@@ -18,6 +18,9 @@
 		DD82679E2C3766BD001AA174 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82679D2C3766BD001AA174 /* WordViewModel.swift */; };
 		DD8267A22C376B67001AA174 /* WordsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8267A12C376B67001AA174 /* WordsLoader.swift */; };
 		DD853D8E2C3ED29C00BD98FF /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD853D8D2C3ED29C00BD98FF /* words.txt */; };
+		DD853D902C3F2DDD00BD98FF /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD853D8F2C3F2DDD00BD98FF /* TimerManager.swift */; };
+		DD853D922C3F339B00BD98FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD853D912C3F339B00BD98FF /* HomeView.swift */; };
+		DD853D942C3F39B800BD98FF /* HighScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD853D932C3F39B800BD98FF /* HighScoresView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		DD82679D2C3766BD001AA174 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		DD8267A12C376B67001AA174 /* WordsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsLoader.swift; sourceTree = "<group>"; };
 		DD853D8D2C3ED29C00BD98FF /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		DD853D8F2C3F2DDD00BD98FF /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		DD853D912C3F339B00BD98FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DD853D932C3F39B800BD98FF /* HighScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,9 @@
 				DD82678E2C37640B001AA174 /* Preview Content */,
 				DD8267A12C376B67001AA174 /* WordsLoader.swift */,
 				DD3417132C3DBD3300C8A9BC /* DBLinkedList.swift */,
+				DD853D8F2C3F2DDD00BD98FF /* TimerManager.swift */,
+				DD853D912C3F339B00BD98FF /* HomeView.swift */,
+				DD853D932C3F39B800BD98FF /* HighScoresView.swift */,
 			);
 			path = POC_infinite_wordHunt;
 			sourceTree = "<group>";
@@ -162,9 +171,12 @@
 				DD82679E2C3766BD001AA174 /* WordViewModel.swift in Sources */,
 				DD8267922C37640B001AA174 /* Persistence.swift in Sources */,
 				DD82678B2C37640A001AA174 /* ContentView.swift in Sources */,
+				DD853D922C3F339B00BD98FF /* HomeView.swift in Sources */,
 				DD8267892C37640A001AA174 /* POC_infinite_wordHuntApp.swift in Sources */,
 				DD82679C2C376672001AA174 /* LetterSquare.swift in Sources */,
+				DD853D942C3F39B800BD98FF /* HighScoresView.swift in Sources */,
 				DD8267A22C376B67001AA174 /* WordsLoader.swift in Sources */,
+				DD853D902C3F2DDD00BD98FF /* TimerManager.swift in Sources */,
 				DD3417142C3DBD3300C8A9BC /* DBLinkedList.swift in Sources */,
 				DD8267952C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodeld in Sources */,
 			);

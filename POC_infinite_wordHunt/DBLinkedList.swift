@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+enum ListError: Error {
+    case indexNotAccessible(String)
+}
+
 @Observable
 class DoubleLinkedList: Identifiable {
     let id: UUID = UUID()
@@ -129,7 +133,7 @@ class DoubleLinkedList: Identifiable {
         while currentNode.value.id != value.id {
             index += 1
             guard let loopNode = currentNode.nextNode else {
-                break
+                throw ListError.indexNotAccessible("Index out of range")
             }
             currentNode = loopNode
         }
@@ -137,18 +141,35 @@ class DoubleLinkedList: Identifiable {
         return index
     }
     
-    func forEachValue(closure: @escaping (_: LetterSquareModel) -> Void ) {
+    func forEachValue(closure: @escaping (_: inout LetterSquareModel) -> Void ) {
         var currentNode = root
         
         while currentNode.nextNode != nil {
-            closure(currentNode.value)
+            closure(&currentNode.value)
+            
             guard let loopNode = currentNode.nextNode else {
                 break
             }
             currentNode = loopNode
         }
         
-        closure(currentNode.value)
+        closure(&currentNode.value)
+    }
+    
+    func valueAtIndex(_ index: Int) -> LetterSquareModel {
+        var currentIndex = 0
+        
+        var currentNode = root
+        
+        while currentIndex < index {
+            guard let loopNode = currentNode.nextNode else {
+                return currentNode.value
+            }
+            currentIndex += 1
+            currentNode = loopNode
+        }
+        
+        return currentNode.value
     }
     
     func changeAtIndex(to newValue: LetterSquareModel, atIndex: Int) {

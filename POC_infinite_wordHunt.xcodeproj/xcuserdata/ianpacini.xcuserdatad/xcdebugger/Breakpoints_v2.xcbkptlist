@@ -14,9 +14,25 @@
             filePath = "POC_infinite_wordHunt/WordViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
             landmarkName = "randomizeRowAndColumn()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D58CB4C3-776A-4C8A-BC12-2F080D4FA033"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POC_infinite_wordHunt/WordViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "enableAround()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
