@@ -9,12 +9,13 @@ import SwiftUI
 
 @main
 struct POC_infinite_wordHuntApp: App {
-    let persistenceController = PersistenceController.shared
+//    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            HomeView()
+                .preferredColorScheme(.light)
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

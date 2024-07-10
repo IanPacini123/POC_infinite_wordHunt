@@ -72,10 +72,11 @@ struct ContentView: View {
                 }
             }
             .onAppear(perform: {
+                timerManager = TimerManager(initialTime: 30)
                 timerManager.startTimer()
             })
             
-            if !timerManager.timeRemaining.isZero {
+            if timerManager.timeRemaining.isZero {
                 Color.black.opacity(0.5)
                     .ignoresSafeArea()
                     .overlay {
@@ -84,18 +85,15 @@ struct ContentView: View {
                                 Text("Your score:")
                                 Text("\(currentPoints)")
                             }
-                                .font(.title)
-                                .bold()
+                            .font(.title)
+                            .bold()
                             
                             NavigationLink {
                                 HomeView()
                             } label: {
                                 Text("Go home")
                             }
-
-                        }
-                        .onAppear {
-                            UserDefaults.standard.ad
+                            
                         }
                         
                         .background {
