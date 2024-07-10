@@ -65,10 +65,10 @@ class WordViewModel {
         self.game_height = game_height
         
         for _ in 0..<game_width {
-            let newColumn = DoubleLinkedList(rootValue: .init(letter: letters.randomElement()!, isSelected: false))
+            let newColumn = DoubleLinkedList(rootValue: .init(letter: letters.randomElement()!, isSelected: false, isEnabled: true))
             
             for _ in 1..<game_height {
-                newColumn.addValueStart(value: .init(letter: letters.randomElement()!, isSelected: false))
+                newColumn.addValueStart(value: .init(letter: letters.randomElement()!, isSelected: false, isEnabled: true))
             }
             
             self.currentLetters.append(newColumn)
@@ -101,7 +101,7 @@ class WordViewModel {
         return self.currentWord
     }
     
-    func checkWord(currentPoints: Binding<Int>) -> Bool {
+    func checkWord(currentPoints: Binding<Int>) {
         let word = currentWord.joined().uppercased()
         
         if words.contains(word) {
@@ -109,17 +109,6 @@ class WordViewModel {
             randomizeRowAndColumn()
             resetSelection()
             resetWord()
-        }
-        
-        return words.contains(word)
-    }
-    
-    func removeLetters() {
-        
-        for list in currentLetters {
-            selectedLetters.forEach({
-                list.removeValue(value: $0)
-            })
         }
     }
     
@@ -147,7 +136,7 @@ class WordViewModel {
                         randomizeColumn()
                         
                         currentLetters.forEach({
-                            $0.changeAtIndex(to: .init(letter: letters.randomElement()!, isSelected: false), atIndex: index)
+                            $0.changeAtIndex(to: .init(letter: letters.randomElement()!, isSelected: false, isEnabled: true), atIndex: index)
                         })
                     } catch {
                         return
@@ -158,21 +147,13 @@ class WordViewModel {
     }
     
     func createNewColumn() -> DoubleLinkedList {
-        let newColumn = DoubleLinkedList(rootValue: .init(letter: letters.randomElement()!, isSelected: false))
+        let newColumn = DoubleLinkedList(rootValue: .init(letter: letters.randomElement()!, isSelected: false, isEnabled: true))
         
         for _ in 1..<game_height {
-            newColumn.addValueStart(value: .init(letter: letters.randomElement()!, isSelected: false))
+            newColumn.addValueStart(value: .init(letter: letters.randomElement()!, isSelected: false, isEnabled: true))
         }
         
         return newColumn
-    }
-    
-    func addNewLetters() {
-        for list in currentLetters {
-            while list.count() < game_height {
-                list.addValueStart(value: .init(letter: letters.randomElement()!, isSelected: false))
-            }
-        }
     }
     
     func sumPoints(currentPoints: Binding<Int>, word: String) {

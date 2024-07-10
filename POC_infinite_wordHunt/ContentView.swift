@@ -32,12 +32,7 @@ struct ContentView: View {
             }
             
             Button {
-                if wordViewModel.checkWord(currentPoints: $currentPoints) {
-                    print("Found word: \(wordViewModel.getWord())")
-                } else {
-                    print(wordViewModel.getWord())
-                }
-                
+                wordViewModel.checkWord(currentPoints: $currentPoints)
             } label: {
                 RoundedRectangle(cornerRadius: 25)
                     .frame(width: 200, height: 70)

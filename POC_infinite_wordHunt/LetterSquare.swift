@@ -40,8 +40,9 @@ struct LetterSquareModel: Identifiable {
     var id: UUID = UUID()
     var letter: String
     var isSelected: Bool
+    var isEnabled: Bool
 }
 
 #Preview {
-    LetterSquare(wordViewModel: .init(), letterSquare: .init(letter: "", isSelected: false))
+    LetterSquare(wordViewModel: .init(), letterSquare: .init(letter: "", isSelected: false, isEnabled: false))
 }
