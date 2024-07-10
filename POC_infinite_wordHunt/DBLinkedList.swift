@@ -121,14 +121,59 @@ class DoubleLinkedList: Identifiable {
         return true
     }
     
+    func findValueIndex(value: LetterSquareModel) throws -> Int {
+        var index = 0
+        
+        var currentNode = root
+        
+        while currentNode.value.id != value.id {
+            index += 1
+            guard let loopNode = currentNode.nextNode else {
+                break
+            }
+            currentNode = loopNode
+        }
+        
+        return index
+    }
+    
+    func forEachValue(closure: @escaping (_: LetterSquareModel) -> Void ) {
+        var currentNode = root
+        
+        while currentNode.nextNode != nil {
+            closure(currentNode.value)
+            guard let loopNode = currentNode.nextNode else {
+                break
+            }
+            currentNode = loopNode
+        }
+        
+        closure(currentNode.value)
+    }
+    
+    func changeAtIndex(to newValue: LetterSquareModel, atIndex: Int) {
+        var index = 0
+        
+        var currentNode = root
+        
+        while index < atIndex {
+            guard let loopNode = currentNode.nextNode else {
+                return
+            }
+            index += 1
+            currentNode = loopNode
+        }
+        
+        currentNode.value = newValue
+    }
+    
     func printList() {
         var currentNode = root
         
         while currentNode.nextNode != nil {
             print(currentNode.value.letter)
             guard let loopNode = currentNode.nextNode else {
-                print(currentNode.value.letter)
-                return
+                break
             }
             currentNode = loopNode
         }

@@ -16,8 +16,8 @@
 		DD8267952C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD8267932C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodeld */; };
 		DD82679C2C376672001AA174 /* LetterSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82679B2C376672001AA174 /* LetterSquare.swift */; };
 		DD82679E2C3766BD001AA174 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82679D2C3766BD001AA174 /* WordViewModel.swift */; };
-		DD8267A02C3769A3001AA174 /* newFileFiltered.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD82679F2C3769A3001AA174 /* newFileFiltered.txt */; };
 		DD8267A22C376B67001AA174 /* WordsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8267A12C376B67001AA174 /* WordsLoader.swift */; };
+		DD853D8E2C3ED29C00BD98FF /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD853D8D2C3ED29C00BD98FF /* words.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +31,8 @@
 		DD8267942C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = POC_infinite_wordHunt.xcdatamodel; sourceTree = "<group>"; };
 		DD82679B2C376672001AA174 /* LetterSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterSquare.swift; sourceTree = "<group>"; };
 		DD82679D2C3766BD001AA174 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
-		DD82679F2C3769A3001AA174 /* newFileFiltered.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = newFileFiltered.txt; path = ../../../../Downloads/newFileFiltered.txt; sourceTree = "<group>"; };
 		DD8267A12C376B67001AA174 /* WordsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsLoader.swift; sourceTree = "<group>"; };
+		DD853D8D2C3ED29C00BD98FF /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 				DD82679D2C3766BD001AA174 /* WordViewModel.swift */,
 				DD82679B2C376672001AA174 /* LetterSquare.swift */,
 				DD82678C2C37640B001AA174 /* Assets.xcassets */,
-				DD82679F2C3769A3001AA174 /* newFileFiltered.txt */,
+				DD853D8D2C3ED29C00BD98FF /* words.txt */,
 				DD8267932C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodeld */,
 				DD8267912C37640B001AA174 /* Persistence.swift */,
 				DD82678E2C37640B001AA174 /* Preview Content */,
@@ -147,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD8267902C37640B001AA174 /* Preview Assets.xcassets in Resources */,
-				DD8267A02C3769A3001AA174 /* newFileFiltered.txt in Resources */,
+				DD853D8E2C3ED29C00BD98FF /* words.txt in Resources */,
 				DD82678D2C37640B001AA174 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
