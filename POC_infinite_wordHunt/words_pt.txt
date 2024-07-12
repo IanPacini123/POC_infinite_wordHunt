@@ -25,6 +25,8 @@ doi
 bis
 ola
 gago
+pio
+tu
 ratificados
 vaivem
 lulite
@@ -374,6 +376,7 @@ sopro
 criativos
 iguarias
 paulao
+berro
 berrou
 rivaliza
 sindicatos
@@ -762,7 +765,7 @@ molestadas
 elvis
 dizimo
 multiculturalismo
-cofins
+confins
 surgida
 prithvi
 complexa
@@ -770,7 +773,21 @@ inspeccoes
 sacanice
 repetir
 espontanea
+suar
+pera
+nabo
+pia
+caqui
+sumario
 assessores
+raso
+papo
+asa
+fuja
+farelo
+axe
+bane
+burro
 tonica
 maiores
 particularidade
@@ -2243,7 +2260,6 @@ preferia
 considerarem
 horizontalmente
 imaginei
-o
 adornada
 nacao
 decidido
@@ -2259,7 +2275,6 @@ bradesco
 site
 posicoes
 estrategicos
-e
 adormecido
 cientifico
 noir
@@ -5578,7 +5593,6 @@ dividissem
 publicado
 buscando
 declara
-h
 evitara
 epidemia
 indiciou
@@ -7255,7 +7269,6 @@ volto
 arquitetura
 excecoes
 duplicacao
-i
 energias
 taiwan
 perceberam
@@ -8344,7 +8357,6 @@ pontual
 passivel
 zhuhai
 residencias
-z
 bielorussia
 comentar
 virtude
@@ -9097,7 +9109,6 @@ gigantesca
 definitivos
 euskadi
 convencem
-o
 rentabilidade
 comdex
 gastos
@@ -10133,7 +10144,6 @@ abalada
 terminaria
 micropartidos
 nobres
-c
 alimentem
 pitarelli
 namoro
@@ -10221,7 +10231,6 @@ homicida
 roubalheira
 variacao
 concorda
-s
 zapar
 visitavel
 peniche
@@ -11375,7 +11384,6 @@ inibidoras
 pessimismo
 estabelecida
 esforcados
-n
 atrai
 interlagos
 simplesmente
@@ -13320,7 +13328,6 @@ dentificado
 limitou
 lances
 servia
-y
 cerimonial
 obrigatoriamente
 propulsor
@@ -13493,7 +13500,6 @@ metroviarios
 terrorismo
 ceara
 preferir
-p
 tracando
 surpresa
 arborigene
@@ -13950,7 +13956,6 @@ abc
 juiz
 fotograficas
 arquetipos
-e
 afetam
 seguira
 heterogeneidade
@@ -14424,7 +14429,6 @@ arquiteto
 responderam
 vereadores
 gostava
-m
 percepcao
 levantados
 promontorio
@@ -16054,7 +16058,6 @@ entidades
 rubricou
 primogenito
 difusa
-r
 comercial
 misterioso
 meseta
@@ -17926,7 +17929,6 @@ roraima
 deixado
 leitos
 custodia
-a
 evocando
 ibge
 compras
@@ -19664,7 +19666,6 @@ incluem
 opcao
 valdemar
 vertebra
-b
 mamem
 direccao
 paixoes
@@ -20362,7 +20363,6 @@ influenciado
 latas
 juntou
 credenciais
-t
 wolfsburg
 voce
 morta

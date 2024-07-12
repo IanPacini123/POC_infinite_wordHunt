@@ -77,17 +77,17 @@
 				DD82678A2C37640A001AA174 /* ContentView.swift */,
 				DD82679D2C3766BD001AA174 /* WordViewModel.swift */,
 				DD82679B2C376672001AA174 /* LetterSquare.swift */,
-				DD82678C2C37640B001AA174 /* Assets.xcassets */,
-				DDCA0D7B2C41A4430069EA28 /* words_pt.txt */,
-				DD5EF0112C406C3D00BDF46F /* words_english.txt */,
-				DD853D8D2C3ED29C00BD98FF /* old_words.txt */,
-				DD82678E2C37640B001AA174 /* Preview Content */,
 				DD8267A12C376B67001AA174 /* WordsLoader.swift */,
 				DD3417132C3DBD3300C8A9BC /* DBLinkedList.swift */,
 				DD853D8F2C3F2DDD00BD98FF /* TimerManager.swift */,
 				DD853D912C3F339B00BD98FF /* HomeView.swift */,
 				DD853D932C3F39B800BD98FF /* HighScoresView.swift */,
 				DDCA0D5D2C40B5070069EA28 /* Highscore.swift */,
+				DDCA0D7B2C41A4430069EA28 /* words_pt.txt */,
+				DD5EF0112C406C3D00BDF46F /* words_english.txt */,
+				DD853D8D2C3ED29C00BD98FF /* old_words.txt */,
+				DD82678C2C37640B001AA174 /* Assets.xcassets */,
+				DD82678E2C37640B001AA174 /* Preview Content */,
 			);
 			path = POC_infinite_wordHunt;
 			sourceTree = "<group>";

@@ -94,6 +94,8 @@ struct ContentView: View {
                     timerManager = TimerManager(initialTime: 30)
                     timerManager.startTimer()
                 }
+                
+                wordViewModel.clear()
             })
             
             if timerManager.timeRemaining.isZero {
@@ -162,6 +164,9 @@ private struct NewHighscoreForm: View {
             .padding(.horizontal, 20)
             
             Button {
+                
+                if playerName.isEmpty { playerName = "No Name" }
+                
                 let newHighscore = Highscore(name: playerName,
                                              score: playerPoint,
                                              gameStyle: gameStyle)
