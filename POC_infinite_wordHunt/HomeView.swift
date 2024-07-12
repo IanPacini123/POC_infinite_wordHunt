@@ -23,31 +23,38 @@ struct HomeView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: ContentView(gameStyle: .timeAttack)) {
                     RoundedRectangle(cornerRadius: 20)
                         .frame(width: 200, height: 80)
                         .overlay {
-                            Text("Jogar!")
+                            Text("Ataque de tempo")
                                 .foregroundStyle(.white)
                                 .font(.title)
                                 .bold()
                         }
                 }
                 
-//                NavigationLink(destination: ContentView()) {
-//                    RoundedRectangle(cornerRadius: 20)
-//                        .frame(width: 200, height: 80)
-//                        .overlay {
-//                            Text("Jogar!")
-//                                .foregroundStyle(.white)
-//                                .font(.title)
-//                                .bold()
-//                        }
-//                }
+                NavigationLink(destination: ContentView(gameStyle: .endless)) {
+                    RoundedRectangle(cornerRadius: 20)
+                        .frame(width: 200, height: 80)
+                        .overlay {
+                            Text("Sem fim")
+                                .foregroundStyle(.white)
+                                .font(.title)
+                                .bold()
+                        }
+                }
                 
                 Spacer()
             }
             .padding()
+            .toolbar(content: {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink(destination: HighScoresView()) {
+                        Text("Placar")
+                    }
+                }
+            })
         }
     }
 }

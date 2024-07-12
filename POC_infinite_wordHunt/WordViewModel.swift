@@ -49,7 +49,7 @@ class WordViewModel {
         let game_width = 6
         let game_height = 6
         
-        if let filepath = Bundle.main.path(forResource: "words", ofType: "txt") {
+        if let filepath = Bundle.main.path(forResource: "words_pt", ofType: "txt") {
             let wordLoader = WordsLoader(filePath: filepath)
             
             self.words = Set(wordLoader.getWords())

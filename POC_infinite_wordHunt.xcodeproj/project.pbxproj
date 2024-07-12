@@ -8,37 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		DD3417142C3DBD3300C8A9BC /* DBLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3417132C3DBD3300C8A9BC /* DBLinkedList.swift */; };
+		DD5EF0122C406C3D00BDF46F /* words_english.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD5EF0112C406C3D00BDF46F /* words_english.txt */; };
 		DD8267892C37640A001AA174 /* POC_infinite_wordHuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8267882C37640A001AA174 /* POC_infinite_wordHuntApp.swift */; };
 		DD82678B2C37640A001AA174 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82678A2C37640A001AA174 /* ContentView.swift */; };
 		DD82678D2C37640B001AA174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD82678C2C37640B001AA174 /* Assets.xcassets */; };
 		DD8267902C37640B001AA174 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD82678F2C37640B001AA174 /* Preview Assets.xcassets */; };
-		DD8267922C37640B001AA174 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8267912C37640B001AA174 /* Persistence.swift */; };
-		DD8267952C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD8267932C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodeld */; };
 		DD82679C2C376672001AA174 /* LetterSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82679B2C376672001AA174 /* LetterSquare.swift */; };
 		DD82679E2C3766BD001AA174 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82679D2C3766BD001AA174 /* WordViewModel.swift */; };
 		DD8267A22C376B67001AA174 /* WordsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8267A12C376B67001AA174 /* WordsLoader.swift */; };
-		DD853D8E2C3ED29C00BD98FF /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD853D8D2C3ED29C00BD98FF /* words.txt */; };
+		DD853D8E2C3ED29C00BD98FF /* old_words.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD853D8D2C3ED29C00BD98FF /* old_words.txt */; };
 		DD853D902C3F2DDD00BD98FF /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD853D8F2C3F2DDD00BD98FF /* TimerManager.swift */; };
 		DD853D922C3F339B00BD98FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD853D912C3F339B00BD98FF /* HomeView.swift */; };
 		DD853D942C3F39B800BD98FF /* HighScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD853D932C3F39B800BD98FF /* HighScoresView.swift */; };
+		DDCA0D5E2C40B5070069EA28 /* Highscore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCA0D5D2C40B5070069EA28 /* Highscore.swift */; };
+		DDCA0D7C2C41A4430069EA28 /* words_pt.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDCA0D7B2C41A4430069EA28 /* words_pt.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD3417132C3DBD3300C8A9BC /* DBLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBLinkedList.swift; sourceTree = "<group>"; };
+		DD5EF0112C406C3D00BDF46F /* words_english.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_english.txt; sourceTree = "<group>"; };
 		DD8267852C37640A001AA174 /* POC_infinite_wordHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POC_infinite_wordHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8267882C37640A001AA174 /* POC_infinite_wordHuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POC_infinite_wordHuntApp.swift; sourceTree = "<group>"; };
 		DD82678A2C37640A001AA174 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DD82678C2C37640B001AA174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD82678F2C37640B001AA174 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DD8267912C37640B001AA174 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		DD8267942C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = POC_infinite_wordHunt.xcdatamodel; sourceTree = "<group>"; };
 		DD82679B2C376672001AA174 /* LetterSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterSquare.swift; sourceTree = "<group>"; };
 		DD82679D2C3766BD001AA174 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		DD8267A12C376B67001AA174 /* WordsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsLoader.swift; sourceTree = "<group>"; };
-		DD853D8D2C3ED29C00BD98FF /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		DD853D8D2C3ED29C00BD98FF /* old_words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = old_words.txt; sourceTree = "<group>"; };
 		DD853D8F2C3F2DDD00BD98FF /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		DD853D912C3F339B00BD98FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DD853D932C3F39B800BD98FF /* HighScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresView.swift; sourceTree = "<group>"; };
+		DDCA0D5D2C40B5070069EA28 /* Highscore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highscore.swift; sourceTree = "<group>"; };
+		DDCA0D7B2C41A4430069EA28 /* words_pt.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_pt.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,15 +78,16 @@
 				DD82679D2C3766BD001AA174 /* WordViewModel.swift */,
 				DD82679B2C376672001AA174 /* LetterSquare.swift */,
 				DD82678C2C37640B001AA174 /* Assets.xcassets */,
-				DD853D8D2C3ED29C00BD98FF /* words.txt */,
-				DD8267932C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodeld */,
-				DD8267912C37640B001AA174 /* Persistence.swift */,
+				DDCA0D7B2C41A4430069EA28 /* words_pt.txt */,
+				DD5EF0112C406C3D00BDF46F /* words_english.txt */,
+				DD853D8D2C3ED29C00BD98FF /* old_words.txt */,
 				DD82678E2C37640B001AA174 /* Preview Content */,
 				DD8267A12C376B67001AA174 /* WordsLoader.swift */,
 				DD3417132C3DBD3300C8A9BC /* DBLinkedList.swift */,
 				DD853D8F2C3F2DDD00BD98FF /* TimerManager.swift */,
 				DD853D912C3F339B00BD98FF /* HomeView.swift */,
 				DD853D932C3F39B800BD98FF /* HighScoresView.swift */,
+				DDCA0D5D2C40B5070069EA28 /* Highscore.swift */,
 			);
 			path = POC_infinite_wordHunt;
 			sourceTree = "<group>";
@@ -156,7 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD8267902C37640B001AA174 /* Preview Assets.xcassets in Resources */,
-				DD853D8E2C3ED29C00BD98FF /* words.txt in Resources */,
+				DD853D8E2C3ED29C00BD98FF /* old_words.txt in Resources */,
+				DD5EF0122C406C3D00BDF46F /* words_english.txt in Resources */,
+				DDCA0D7C2C41A4430069EA28 /* words_pt.txt in Resources */,
 				DD82678D2C37640B001AA174 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,7 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD82679E2C3766BD001AA174 /* WordViewModel.swift in Sources */,
-				DD8267922C37640B001AA174 /* Persistence.swift in Sources */,
+				DDCA0D5E2C40B5070069EA28 /* Highscore.swift in Sources */,
 				DD82678B2C37640A001AA174 /* ContentView.swift in Sources */,
 				DD853D922C3F339B00BD98FF /* HomeView.swift in Sources */,
 				DD8267892C37640A001AA174 /* POC_infinite_wordHuntApp.swift in Sources */,
@@ -178,7 +183,6 @@
 				DD8267A22C376B67001AA174 /* WordsLoader.swift in Sources */,
 				DD853D902C3F2DDD00BD98FF /* TimerManager.swift in Sources */,
 				DD3417142C3DBD3300C8A9BC /* DBLinkedList.swift in Sources */,
-				DD8267952C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,19 +388,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DD8267932C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DD8267942C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodel */,
-			);
-			currentVersion = DD8267942C37640B001AA174 /* POC_infinite_wordHunt.xcdatamodel */;
-			path = POC_infinite_wordHunt.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DD82677D2C37640A001AA174 /* Project object */;
 }

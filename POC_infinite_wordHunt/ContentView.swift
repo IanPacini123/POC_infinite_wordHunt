@@ -6,27 +6,45 @@
 //
 
 import SwiftUI
-import CoreData
+import SwiftData
+
+enum GameStyle: String, CaseIterable {
+    case timeAttack = "Ataque de tempo"
+    case endless = "Sem fim"
+}
 
 struct ContentView: View {
+    @Environment(\.dismiss) private var dismiss
+    
     @State var wordViewModel: WordViewModel = .init()
-    @State var selected: [String] = []
     
     @State var timerManager = TimerManager(initialTime: 30)
     @State var currentPoints = 0
+    
+    @State var newHighscoreSheet: Bool = false
+    
+    let gameStyle: GameStyle
 
     var body: some View {
         ZStack {
             
             VStack {
+                Text(wordViewModel.getWord().isEmpty ? " " : wordViewModel.getWord().joined())
+                    .foregroundStyle(.black)
+                    .underline()
+                    .font(.title)
+                    .bold()
+                
                 HStack {
                     Text("Pontuação: \(currentPoints)")
                     
                     Spacer()
                     
-                    VStack(alignment: .trailing){
-                        Text("Tempo restante:")
-                        Text("\(timerManager.timeRemaining.formatted(.number))")
+                    if gameStyle == .timeAttack {
+                        VStack(alignment: .trailing){
+                            Text("Tempo restante:")
+                            Text("\(timerManager.timeRemaining.formatted(.number))")
+                        }
                     }
                 }
                 .font(.title3)
@@ -51,7 +69,7 @@ struct ContentView: View {
                     RoundedRectangle(cornerRadius: 25)
                         .frame(width: 200, height: 70)
                         .overlay {
-                            Text("Send !")
+                            Text("Enviar !")
                                 .foregroundStyle(.white)
                                 .font(.title)
                                 .bold()
@@ -64,7 +82,7 @@ struct ContentView: View {
                     RoundedRectangle(cornerRadius: 25)
                         .frame(width: 200, height: 70)
                         .overlay {
-                            Text("Clear")
+                            Text("Limpar")
                                 .foregroundStyle(.white)
                                 .font(.title)
                                 .bold()
@@ -72,8 +90,10 @@ struct ContentView: View {
                 }
             }
             .onAppear(perform: {
-                timerManager = TimerManager(initialTime: 30)
-                timerManager.startTimer()
+                if gameStyle == .timeAttack {
+                    timerManager = TimerManager(initialTime: 30)
+                    timerManager.startTimer()
+                }
             })
             
             if timerManager.timeRemaining.isZero {
@@ -88,12 +108,18 @@ struct ContentView: View {
                             .font(.title)
                             .bold()
                             
-                            NavigationLink {
-                                HomeView()
+                            Button {
+                                $newHighscoreSheet.wrappedValue = true
                             } label: {
-                                Text("Go home")
+                                Text("Salvar pontuação")
                             }
+                            .padding(.vertical, 20)
                             
+                            Button {
+                                dismiss()
+                            } label: {
+                                Text("Voltar ao inicio")
+                            }
                         }
                         
                         .background {
@@ -104,11 +130,59 @@ struct ContentView: View {
                     }
             }
         }
-        
-        
+        .navigationBarBackButtonHidden(timerManager.timeRemaining.isZero)
+        .sheet(isPresented: $newHighscoreSheet) {
+            NewHighscoreForm(gameStyle: gameStyle,
+                             playerPoint: $currentPoints,
+                             isPresented: $newHighscoreSheet)
+                .presentationDetents([.fraction(0.3)])
+        }
+    }
+}
+
+private struct NewHighscoreForm: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var highscores: [Highscore]
+    
+    @State var playerName: String = ""
+    @State var gameStyle: GameStyle
+    @Binding var playerPoint: Int
+    @Binding var isPresented: Bool
+
+    var body: some View {
+        VStack {
+            Section {
+                TextField("Nome para o placar:", text: $playerName)
+                    .textFieldStyle(.roundedBorder)
+            } header: {
+                Text("Seu nome:")
+                    .font(.title)
+                    .bold()
+            }
+            .padding(.horizontal, 20)
+            
+            Button {
+                let newHighscore = Highscore(name: playerName,
+                                             score: playerPoint,
+                                             gameStyle: gameStyle)
+                
+                modelContext.insert(newHighscore)
+                
+                isPresented.toggle()
+            } label: {
+                Text("Salvar pontuação!")
+                    .foregroundStyle(.white)
+                    .background {
+                        RoundedRectangle(cornerRadius: 20)
+                            .padding(-20)
+                            .foregroundStyle(.blue)
+                    }
+            }
+            .padding(.top, 40)
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(gameStyle: .endless)
 }

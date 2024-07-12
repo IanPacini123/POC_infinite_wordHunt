@@ -11,7 +11,6 @@ struct LetterSquare: View {
     @State var wordViewModel: WordViewModel
     @State var letterSquare: LetterSquareModel
     
-    
     var body: some View {
         Button {
             
@@ -44,7 +43,6 @@ struct LetterSquare: View {
         }
         .disabled(!letterSquare.isEnabled)
     }
-    
 }
 
 @Observable
