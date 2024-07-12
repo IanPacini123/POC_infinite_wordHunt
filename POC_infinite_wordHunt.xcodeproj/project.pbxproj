@@ -16,12 +16,11 @@
 		DD82679C2C376672001AA174 /* LetterSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82679B2C376672001AA174 /* LetterSquare.swift */; };
 		DD82679E2C3766BD001AA174 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82679D2C3766BD001AA174 /* WordViewModel.swift */; };
 		DD8267A22C376B67001AA174 /* WordsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8267A12C376B67001AA174 /* WordsLoader.swift */; };
-		DD853D8E2C3ED29C00BD98FF /* old_words.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD853D8D2C3ED29C00BD98FF /* old_words.txt */; };
 		DD853D902C3F2DDD00BD98FF /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD853D8F2C3F2DDD00BD98FF /* TimerManager.swift */; };
 		DD853D922C3F339B00BD98FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD853D912C3F339B00BD98FF /* HomeView.swift */; };
 		DD853D942C3F39B800BD98FF /* HighScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD853D932C3F39B800BD98FF /* HighScoresView.swift */; };
+		DD8F7E782C41EA5F00F724E6 /* words_pt.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD8F7E772C41EA5F00F724E6 /* words_pt.txt */; };
 		DDCA0D5E2C40B5070069EA28 /* Highscore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCA0D5D2C40B5070069EA28 /* Highscore.swift */; };
-		DDCA0D7C2C41A4430069EA28 /* words_pt.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDCA0D7B2C41A4430069EA28 /* words_pt.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,12 +34,11 @@
 		DD82679B2C376672001AA174 /* LetterSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterSquare.swift; sourceTree = "<group>"; };
 		DD82679D2C3766BD001AA174 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		DD8267A12C376B67001AA174 /* WordsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsLoader.swift; sourceTree = "<group>"; };
-		DD853D8D2C3ED29C00BD98FF /* old_words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = old_words.txt; sourceTree = "<group>"; };
 		DD853D8F2C3F2DDD00BD98FF /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		DD853D912C3F339B00BD98FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DD853D932C3F39B800BD98FF /* HighScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresView.swift; sourceTree = "<group>"; };
+		DD8F7E772C41EA5F00F724E6 /* words_pt.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = words_pt.txt; sourceTree = "<group>"; };
 		DDCA0D5D2C40B5070069EA28 /* Highscore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highscore.swift; sourceTree = "<group>"; };
-		DDCA0D7B2C41A4430069EA28 /* words_pt.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_pt.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +81,8 @@
 				DD853D912C3F339B00BD98FF /* HomeView.swift */,
 				DD853D932C3F39B800BD98FF /* HighScoresView.swift */,
 				DDCA0D5D2C40B5070069EA28 /* Highscore.swift */,
-				DDCA0D7B2C41A4430069EA28 /* words_pt.txt */,
+				DD8F7E772C41EA5F00F724E6 /* words_pt.txt */,
 				DD5EF0112C406C3D00BDF46F /* words_english.txt */,
-				DD853D8D2C3ED29C00BD98FF /* old_words.txt */,
 				DD82678C2C37640B001AA174 /* Assets.xcassets */,
 				DD82678E2C37640B001AA174 /* Preview Content */,
 			);
@@ -159,9 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD8267902C37640B001AA174 /* Preview Assets.xcassets in Resources */,
-				DD853D8E2C3ED29C00BD98FF /* old_words.txt in Resources */,
 				DD5EF0122C406C3D00BDF46F /* words_english.txt in Resources */,
-				DDCA0D7C2C41A4430069EA28 /* words_pt.txt in Resources */,
+				DD8F7E782C41EA5F00F724E6 /* words_pt.txt in Resources */,
 				DD82678D2C37640B001AA174 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
