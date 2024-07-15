@@ -127,6 +127,10 @@ class WordViewModel {
     func checkWord(currentPoints: Binding<Int>, currentTime: Binding<TimeInterval>) {
         let word = currentWord.joined().uppercased()
         
+        if word.count == 1 {
+            return
+        }
+        
         if words.contains(word) {
             sumPoints(currentPoints: currentPoints, word: word)
             sumTime(currentTime: currentTime, word: word)
