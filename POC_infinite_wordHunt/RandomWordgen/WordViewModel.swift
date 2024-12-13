@@ -135,10 +135,8 @@ class WordViewModel {
             sumPoints(currentPoints: currentPoints, word: word)
             sumTime(currentTime: currentTime, word: word)
             randomizeRowAndColumn()
-            resetSelection()
-            resetWord()
             
-            enableAll()
+            clear()
         }
     }
     

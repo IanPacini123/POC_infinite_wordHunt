@@ -20,6 +20,7 @@
 		DD853D922C3F339B00BD98FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD853D912C3F339B00BD98FF /* HomeView.swift */; };
 		DD853D942C3F39B800BD98FF /* HighScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD853D932C3F39B800BD98FF /* HighScoresView.swift */; };
 		DD8F7E782C41EA5F00F724E6 /* words_pt.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD8F7E772C41EA5F00F724E6 /* words_pt.txt */; };
+		DDA848BB2C45E9340067312F /* WordhuntViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA848BA2C45E9340067312F /* WordhuntViewModel.swift */; };
 		DDCA0D5E2C40B5070069EA28 /* Highscore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCA0D5D2C40B5070069EA28 /* Highscore.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		DD853D912C3F339B00BD98FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DD853D932C3F39B800BD98FF /* HighScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresView.swift; sourceTree = "<group>"; };
 		DD8F7E772C41EA5F00F724E6 /* words_pt.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = words_pt.txt; sourceTree = "<group>"; };
+		DDA848BA2C45E9340067312F /* WordhuntViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordhuntViewModel.swift; sourceTree = "<group>"; };
 		DDCA0D5D2C40B5070069EA28 /* Highscore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highscore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,13 +73,12 @@
 		DD8267872C37640A001AA174 /* POC_infinite_wordHunt */ = {
 			isa = PBXGroup;
 			children = (
+				DDA848B92C45E8A90067312F /* PremadeWords */,
+				DDA848B82C45E3C60067312F /* RandomWordgen */,
 				DD8267882C37640A001AA174 /* POC_infinite_wordHuntApp.swift */,
-				DD82678A2C37640A001AA174 /* ContentView.swift */,
-				DD82679D2C3766BD001AA174 /* WordViewModel.swift */,
-				DD82679B2C376672001AA174 /* LetterSquare.swift */,
-				DD8267A12C376B67001AA174 /* WordsLoader.swift */,
-				DD3417132C3DBD3300C8A9BC /* DBLinkedList.swift */,
 				DD853D8F2C3F2DDD00BD98FF /* TimerManager.swift */,
+				DD8267A12C376B67001AA174 /* WordsLoader.swift */,
+				DD82679B2C376672001AA174 /* LetterSquare.swift */,
 				DD853D912C3F339B00BD98FF /* HomeView.swift */,
 				DD853D932C3F39B800BD98FF /* HighScoresView.swift */,
 				DDCA0D5D2C40B5070069EA28 /* Highscore.swift */,
@@ -95,6 +96,24 @@
 				DD82678F2C37640B001AA174 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDA848B82C45E3C60067312F /* RandomWordgen */ = {
+			isa = PBXGroup;
+			children = (
+				DD82679D2C3766BD001AA174 /* WordViewModel.swift */,
+				DD3417132C3DBD3300C8A9BC /* DBLinkedList.swift */,
+				DD82678A2C37640A001AA174 /* ContentView.swift */,
+			);
+			path = RandomWordgen;
+			sourceTree = "<group>";
+		};
+		DDA848B92C45E8A90067312F /* PremadeWords */ = {
+			isa = PBXGroup;
+			children = (
+				DDA848BA2C45E9340067312F /* WordhuntViewModel.swift */,
+			);
+			path = PremadeWords;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +191,7 @@
 				DD82679E2C3766BD001AA174 /* WordViewModel.swift in Sources */,
 				DDCA0D5E2C40B5070069EA28 /* Highscore.swift in Sources */,
 				DD82678B2C37640A001AA174 /* ContentView.swift in Sources */,
+				DDA848BB2C45E9340067312F /* WordhuntViewModel.swift in Sources */,
 				DD853D922C3F339B00BD98FF /* HomeView.swift in Sources */,
 				DD8267892C37640A001AA174 /* POC_infinite_wordHuntApp.swift in Sources */,
 				DD82679C2C376672001AA174 /* LetterSquare.swift in Sources */,
