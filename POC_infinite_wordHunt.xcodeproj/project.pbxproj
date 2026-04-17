@@ -22,6 +22,7 @@
 		DD8F7E782C41EA5F00F724E6 /* words_pt.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD8F7E772C41EA5F00F724E6 /* words_pt.txt */; };
 		DDA848BB2C45E9340067312F /* WordhuntViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA848BA2C45E9340067312F /* WordhuntViewModel.swift */; };
 		DDCA0D5E2C40B5070069EA28 /* Highscore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCA0D5D2C40B5070069EA28 /* Highscore.swift */; };
+		DDD7480B2E58CB9E0047608B /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD7480A2E58CB9E0047608B /* Trie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		DD8F7E772C41EA5F00F724E6 /* words_pt.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = words_pt.txt; sourceTree = "<group>"; };
 		DDA848BA2C45E9340067312F /* WordhuntViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordhuntViewModel.swift; sourceTree = "<group>"; };
 		DDCA0D5D2C40B5070069EA28 /* Highscore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highscore.swift; sourceTree = "<group>"; };
+		DDD7480A2E58CB9E0047608B /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				DD5EF0112C406C3D00BDF46F /* words_english.txt */,
 				DD82678C2C37640B001AA174 /* Assets.xcassets */,
 				DD82678E2C37640B001AA174 /* Preview Content */,
+				DDD7480A2E58CB9E0047608B /* Trie.swift */,
 			);
 			path = POC_infinite_wordHunt;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				DD82679C2C376672001AA174 /* LetterSquare.swift in Sources */,
 				DD853D942C3F39B800BD98FF /* HighScoresView.swift in Sources */,
 				DD8267A22C376B67001AA174 /* WordsLoader.swift in Sources */,
+				DDD7480B2E58CB9E0047608B /* Trie.swift in Sources */,
 				DD853D902C3F2DDD00BD98FF /* TimerManager.swift in Sources */,
 				DD3417142C3DBD3300C8A9BC /* DBLinkedList.swift in Sources */,
 			);
